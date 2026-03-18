@@ -1,0 +1,196 @@
+/* ============================================
+   MODAL — Portfolio category overlay
+   ============================================ */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--duration-base) var(--ease-out),
+              visibility var(--duration-base);
+}
+
+.modal-overlay.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Backdrop with gradient */
+.modal-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.92),
+    rgba(10, 10, 10, 0.96)
+  );
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  max-height: 85vh;
+  background-color: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg), 0 0 60px rgba(227, 30, 36, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transform: scale(0.92) translateY(20px);
+  transition: transform var(--duration-slow) var(--ease-spring);
+}
+
+.modal-overlay.is-active .modal {
+  transform: scale(1) translateY(0);
+}
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-xl) var(--space-2xl);
+  border-bottom: 1px solid var(--clr-border);
+  flex-shrink: 0;
+}
+
+.modal__title {
+  font-family: var(--ff-display);
+  font-size: var(--fs-2xl);
+  color: var(--clr-white);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+}
+
+.modal__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  color: var(--clr-text-muted);
+  background-color: var(--clr-surface-alt);
+  border: 1px solid var(--clr-border);
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.modal__close:hover {
+  color: var(--clr-white);
+  border-color: var(--clr-primary);
+  background-color: var(--clr-primary);
+}
+
+.modal__body {
+  padding: var(--space-2xl);
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* Scrollbar inside modal */
+.modal__body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal__body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-border-light);
+  border-radius: var(--radius-full);
+}
+
+/* Modal grid for projects inside */
+.modal__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-lg);
+}
+
+/* Modal project item */
+.modal__project {
+  background-color: var(--clr-surface-alt);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--duration-base) var(--ease-out);
+}
+
+.modal__project:hover {
+  border-color: var(--clr-border-light);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.modal__project-thumb {
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, var(--clr-surface), var(--clr-bg));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.modal__project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.modal__project:hover .modal__project-thumb img {
+  transform: scale(1.08);
+}
+
+.modal__project-thumb-placeholder {
+  font-family: var(--ff-display);
+  font-size: var(--fs-lg);
+  letter-spacing: var(--ls-wider);
+  color: var(--clr-text-muted);
+}
+
+.modal__project-info {
+  padding: var(--space-md);
+}
+
+.modal__project-name {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-white);
+  margin-bottom: var(--space-xs);
+}
+
+.modal__project-desc {
+  font-size: var(--fs-xs);
+  color: var(--clr-text-muted);
+  line-height: var(--lh-normal);
+}
+
+/* Empty state */
+.modal__empty {
+  text-align: center;
+  padding: var(--space-3xl);
+}
+
+.modal__empty-icon {
+  font-size: var(--fs-4xl);
+  margin-bottom: var(--space-md);
+  opacity: 0.3;
+}
+
+.modal__empty-text {
+  font-size: var(--fs-md);
+  color: var(--clr-text-muted);
+}
+
+/* Lock body scroll when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
