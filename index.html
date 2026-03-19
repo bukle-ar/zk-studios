@@ -54,7 +54,7 @@
   <header class="header" id="header">
     <nav class="nav" aria-label="Navegación principal">
       <a href="#hero" class="nav__logo" aria-label="ZK Studios - Inicio">
-        <span class="nav__logo-text">ZK<span class="accent">.</span></span>
+        <img src="assets/icons/favicon.png" alt="ZK Studios" class="nav__logo-img">
       </a>
 
       <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
@@ -77,8 +77,48 @@
     <!-- ============================================
          MARQUEE TICKER
     ============================================= -->
-    <div class="marquee" aria-hidden="true">
+<div class="marquee" aria-hidden="true">
       <div class="marquee__track">
+        <span class="marquee__item">ZK STUDIOS</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">DISEÑO GRÁFICO</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">BRANDING</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">UI/UX</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">SOCIAL MEDIA</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">ZK STUDIOS</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">DISEÑO GRÁFICO</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">BRANDING</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">UI/UX</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">SOCIAL MEDIA</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">ZK STUDIOS</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">DISEÑO GRÁFICO</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">BRANDING</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">UI/UX</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">SOCIAL MEDIA</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">ZK STUDIOS</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">DISEÑO GRÁFICO</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">BRANDING</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">UI/UX</span>
+        <span class="marquee__separator">◆</span>
+        <span class="marquee__item">SOCIAL MEDIA</span>
+        <span class="marquee__separator">◆</span>
         <span class="marquee__item">ZK STUDIOS</span>
         <span class="marquee__separator">◆</span>
         <span class="marquee__item">DISEÑO GRÁFICO</span>
@@ -106,28 +146,38 @@
          HERO SECTION
     ============================================= -->
     <section class="hero" id="hero">
+      <div class="hero__banner">
+        <img src="assets/img/BANNER2.png" alt="ZK Studios Banner" class="hero__banner-img">
+      </div>
       <div class="hero__container container">
-        <div class="hero__content">
-          <p class="hero__tag">Senior Graphic Designer</p>
-          <h1 class="hero__title">
-            <span class="hero__title-line" data-animate="slide-up">ZK</span>
-            <span class="hero__title-line hero__title-line--outline" data-animate="slide-up" data-delay="1">STUDIOS</span>
-          </h1>
-          <p class="hero__subtitle">Diseño Gráfico &bull; Branding &bull; Identidad Visual</p>
+        <div class="hero__visual">
+          <div class="hero__image-wrapper">
+            <div class="hero__image-placeholder">
+              <img src="assets/img/LOGO PNG ZKSTUDIOS.png" alt="ZK Studios Logo">
+            </div>
+            <div class="hero__image-decoration"></div>
+          </div>
           <div class="hero__cta">
             <a href="#portfolio" class="btn btn--primary">Ver Portfolio</a>
             <a href="#contact" class="btn btn--outline">Contacto</a>
           </div>
         </div>
-        <div class="hero__visual">
-          <div class="hero__image-wrapper">
-            <!-- Placeholder: reemplazar con foto de perfil/avatar -->
-            <div class="hero__image-placeholder">
-              <span>ZK</span>
-            </div>
-            <div class="hero__image-decoration"></div>
-          </div>
+        <div class="hero__content">
+          <p class="hero__tag">Graphic Designer</p>
+          <h1 class="hero__title">
+            <span class="hero__title-line" data-animate="slide-up">ZK</span>
+            <span class="hero__title-line hero__title-line--outline" data-animate="slide-up" data-delay="1">STUDIOS</span>
+          </h1>
+          <p class="hero__subtitle">Diseño Gráfico &bull; Branding &bull; Identidad Visual</p>
         </div>
+      </div>
+      <div class="hero__bottom container">
+        <div class="hero__bottom-icons">
+          <img src="assets/icons/ICONO ESQ1.png" alt="ZK Icon" class="hero__bottom-icon">
+          <img src="assets/icons/ICONO ESQ2.png" alt="ZK Icon" class="hero__bottom-icon">
+        </div>
+        <div class="hero__bottom-line"></div>
+        <p class="hero__bottom-copy">ZK STUDIOS &mdash; Todos los derechos reservados &copy;</p>
       </div>
     </section>
 
@@ -137,22 +187,23 @@
     <section class="section about" id="about">
       <div class="container">
         <div class="section__header">
-          <span class="section__number">01</span>
+          <img src="assets/icons/ICONO ESQ1.png" alt="" class="section__icon">
           <h2 class="section__title">Sobre Mí</h2>
           <div class="section__line"></div>
         </div>
         <div class="about__grid">
           <div class="about__text">
             <p class="about__intro">
-              Soy un <strong>diseñador gráfico senior</strong> especializado en branding, identidad visual y diseño digital. 
-              Mi pasión es crear proyectos que destaquen con un estilo distintivo, asegurando que transmitan 
-              el mensaje correcto con personalidad única y genuina.
+              Soy un <strong><span class="accent">diseñador gráfico senior</span></strong> de Tierra del Fuego, especialista en 
+              <strong>brandings, logos, piezas publicitarias y edición de video básica.</strong> 
+              Mi enfoque mezcla la fuerza del estilo <strong>brutalista</strong> con la limpieza del 
+              <strong>minimalismo</strong> para crear identidades <strong>únicas</strong>. 
+              Transformo ideas en realidades visuales que distinguen a cada cliente.
             </p>
-            <p class="about__description">
-              Con experiencia en diseño UI/UX, social media y creación de logos, trabajo con marcas 
-              y proyectos que buscan diferenciarse en el mercado. Cada proyecto es una oportunidad 
-              para innovar y dejar una huella duradera.
-            </p>
+            <a href="https://TU-LINK-AL-CV-AQUI.com" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="margin-top: 1.5rem;">
+              Mi Trayecto
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
           </div>
           <div class="about__stats">
             <div class="stat" data-animate="fade-in">
@@ -164,7 +215,7 @@
               <span class="stat__label">Clientes</span>
             </div>
             <div class="stat" data-animate="fade-in" data-delay="2">
-              <span class="stat__number" data-count="4">0</span><span class="stat__plus">+</span>
+              <span class="stat__number" data-count="9">0</span><span class="stat__plus">+</span>
               <span class="stat__label">Años Exp.</span>
             </div>
           </div>
@@ -178,7 +229,7 @@
     <section class="section tools" id="tools">
       <div class="container">
         <div class="section__header">
-          <span class="section__number">02</span>
+          <img src="assets/icons/ICONO ESQ1.png" alt="" class="section__icon">
           <h2 class="section__title">Herramientas</h2>
           <div class="section__line"></div>
         </div>
@@ -186,55 +237,56 @@
           <div class="tool-card" data-animate="scale-in">
             <div class="tool-card__icon">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="48" height="48" rx="8" fill="#300058"/>
-                <text x="24" y="30" text-anchor="middle" fill="#FF9A00" font-size="14" font-weight="bold">Ps</text>
-              </svg>
+                <rect width="48" height="48" rx="8" fill="#1A1A1A"/>
+                <text x="24" y="30" text-anchor="middle" fill="#E31E24" font-size="14" font-weight="bold">Ps</text>
+            </svg>
             </div>
             <h3 class="tool-card__name">Photoshop</h3>
             <span class="tool-card__level">Avanzado</span>
             <div class="tool-card__bar">
-              <div class="tool-card__bar-fill" data-width="95"></div>
+              <div class="tool-card__bar-fill" data-width="100"></div>
             </div>
           </div>
 
           <div class="tool-card" data-animate="scale-in" data-delay="1">
             <div class="tool-card__icon">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="48" height="48" rx="8" fill="#300058"/>
-                <text x="24" y="30" text-anchor="middle" fill="#FF9A00" font-size="14" font-weight="bold">Ai</text>
+                <rect width="48" height="48" rx="8" fill="#1A1A1A"/>
+                <text x="24" y="30" text-anchor="middle" fill="#E31E24" font-size="14" font-weight="bold">Ai</text>
               </svg>
             </div>
             <h3 class="tool-card__name">Illustrator</h3>
             <span class="tool-card__level">Avanzado</span>
             <div class="tool-card__bar">
-              <div class="tool-card__bar-fill" data-width="90"></div>
+              <div class="tool-card__bar-fill" data-width="100"></div>
             </div>
           </div>
 
           <div class="tool-card" data-animate="scale-in" data-delay="2">
             <div class="tool-card__icon">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="48" height="48" rx="8" fill="#1E1E1E"/>
-                <text x="24" y="30" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="bold">Figma</text>
+                <rect width="48" height="48" rx="8" fill="#1A1A1A"/>
+                <text x="24" y="30" text-anchor="middle" fill="#E31E24" font-size="10" font-weight="bold">Blender</text>
               </svg>
             </div>
-            <h3 class="tool-card__name">Figma</h3>
-            <span class="tool-card__level">Avanzado</span>
+            <h3 class="tool-card__name">Blender</h3>
+            <span class="tool-card__level">Básico</span>
             <div class="tool-card__bar">
-              <div class="tool-card__bar-fill" data-width="85"></div>
+              <div class="tool-card__bar-fill" data-width="100"></div>
             </div>
           </div>
 
-          <!-- Placeholder para más herramientas -->
-          <div class="tool-card tool-card--add" data-animate="scale-in" data-delay="3">
+          <div class="tool-card" data-animate="scale-in" data-delay="3">
             <div class="tool-card__icon">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="48" height="48" rx="8" fill="var(--clr-surface-alt)" stroke="var(--clr-border)" stroke-dasharray="4 4"/>
-                <text x="24" y="32" text-anchor="middle" fill="var(--clr-text-muted)" font-size="20">+</text>
-              </svg>
+                <rect width="48" height="48" rx="8" fill="#1A1A1A"/>
+                <text x="24" y="30" text-anchor="middle" fill="#E31E24" font-size="9" font-weight="bold">CapCut</text>
+              </svg>            </div>
+            <h3 class="tool-card__name">CapCut</h3>
+            <span class="tool-card__level">Intermedio </span>
+            <div class="tool-card__bar">
+              <div class="tool-card__bar-fill" data-width="100"></div>
             </div>
-            <h3 class="tool-card__name">Más pronto</h3>
-            <span class="tool-card__level">Por definir</span>
           </div>
         </div>
       </div>
@@ -246,106 +298,56 @@
     <section class="section portfolio" id="portfolio">
       <div class="container">
         <div class="section__header">
-          <span class="section__number">03</span>
+          <img src="assets/icons/ICONO ESQ1.png" alt="" class="section__icon">
           <h2 class="section__title">Portfolio</h2>
           <div class="section__line"></div>
         </div>
         <p class="portfolio__intro">
-          Explorá mis trabajos organizados por categoría. Hacé click en cada uno para ver más detalles.
+          Hacé click en cada tarjeta para ver mis trabajos realizados.
         </p>
-
-        <div class="portfolio__categories">
-          <button class="category-btn" data-category="logos" aria-label="Ver categoría Logos">
-            <span class="category-btn__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-            </span>
-            <span class="category-btn__text">Logos</span>
-            <span class="category-btn__arrow">&rarr;</span>
-          </button>
-
-          <button class="category-btn" data-category="identidad-visual" aria-label="Ver categoría Identidad Visual">
-            <span class="category-btn__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            </span>
-            <span class="category-btn__text">Identidad Visual</span>
-            <span class="category-btn__arrow">&rarr;</span>
-          </button>
-
-          <button class="category-btn" data-category="ui-ux" aria-label="Ver categoría UI/UX Design">
-            <span class="category-btn__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            </span>
-            <span class="category-btn__text">UI / UX Design</span>
-            <span class="category-btn__arrow">&rarr;</span>
-          </button>
-
-          <button class="category-btn" data-category="social-media" aria-label="Ver categoría Social Media">
-            <span class="category-btn__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-            </span>
-            <span class="category-btn__text">Social Media</span>
-            <span class="category-btn__arrow">&rarr;</span>
-          </button>
-
-          <button class="category-btn" data-category="branding" aria-label="Ver categoría Branding">
-            <span class="category-btn__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
-            </span>
-            <span class="category-btn__text">Branding</span>
-            <span class="category-btn__arrow">&rarr;</span>
-          </button>
-        </div>
 
         <!-- Portfolio Gallery Preview -->
         <div class="portfolio__preview">
-          <div class="portfolio__grid">
-            <article class="project-card" data-category="logos" data-animate="fade-in">
-              <div class="project-card__thumbnail">
-                <div class="project-card__placeholder">
-                  <span>LOGO 01</span>
-                </div>
-              </div>
-              <div class="project-card__info">
-                <h3 class="project-card__title">Logo Project</h3>
-                <span class="project-card__tag">Logos</span>
-              </div>
-            </article>
+<div class="portfolio__grid">
+          <article class="project-card" data-category="logos" data-animate="fade-in">
+            <div class="project-card__thumbnail">
+              <img src="assets/portfolio/logos-cover.png" alt="Logos">
+            </div>
+            <div class="project-card__info">
+              <h3 class="project-card__title">Logos</h3>
+              <span class="project-card__tag">Logofolio</span>
+            </div>
+          </article>
 
-            <article class="project-card" data-category="identidad-visual" data-animate="fade-in" data-delay="1">
-              <div class="project-card__thumbnail">
-                <div class="project-card__placeholder">
-                  <span>BRAND 01</span>
-                </div>
-              </div>
-              <div class="project-card__info">
-                <h3 class="project-card__title">Visual Identity</h3>
-                <span class="project-card__tag">Identidad Visual</span>
-              </div>
-            </article>
+          <article class="project-card" data-category="branding" data-animate="fade-in" data-delay="1">
+            <div class="project-card__thumbnail">
+              <img src="assets/portfolio/branding-cover.png" alt="Branding">
+            </div>
+            <div class="project-card__info">
+              <h3 class="project-card__title">Branding</h3>
+              <span class="project-card__tag">Identidad Visual</span>
+            </div>
+          </article>
 
-            <article class="project-card" data-category="ui-ux" data-animate="fade-in" data-delay="2">
-              <div class="project-card__thumbnail">
-                <div class="project-card__placeholder">
-                  <span>UI/UX 01</span>
-                </div>
-              </div>
-              <div class="project-card__info">
-                <h3 class="project-card__title">App Design</h3>
-                <span class="project-card__tag">UI/UX</span>
-              </div>
-            </article>
+          <article class="project-card" data-category="ui-ux" data-animate="fade-in" data-delay="2">
+            <div class="project-card__thumbnail">
+              <img src="assets/portfolio/uiux-cover.png" alt="UI/UX Design">
+            </div>
+            <div class="project-card__info">
+              <h3 class="project-card__title">UI / UX Design</h3>
+              <span class="project-card__tag">UI/UX</span>
+            </div>
+          </article>
 
-            <article class="project-card" data-category="social-media" data-animate="fade-in" data-delay="3">
-              <div class="project-card__thumbnail">
-                <div class="project-card__placeholder">
-                  <span>SOCIAL 01</span>
-                </div>
-              </div>
-              <div class="project-card__info">
-                <h3 class="project-card__title">Social Campaign</h3>
-                <span class="project-card__tag">Social Media</span>
-              </div>
-            </article>
+          <article class="project-card" data-category="social-media" data-animate="fade-in" data-delay="3">
+            <div class="project-card__thumbnail">
+              <img src="assets/portfolio/social-cover.png" alt="Social Media">
+            </div>
+            <div class="project-card__info">
+              <h3 class="project-card__title">Social Media</h3>
+              <span class="project-card__tag">Redes Sociales</span>
+            </div>
+          </article>
           </div>
         </div>
       </div>
@@ -357,68 +359,39 @@
     <section class="section contact" id="contact">
       <div class="container">
         <div class="section__header">
-          <span class="section__number">04</span>
+          <img src="assets/icons/ICONO ESQ1.png" alt="" class="section__icon">
           <h2 class="section__title">Contacto</h2>
           <div class="section__line"></div>
         </div>
-        <div class="contact__grid">
-          <div class="contact__info">
-            <p class="contact__text">
-              ¿Tenés un proyecto en mente? Escribime y hagamos algo increíble juntos.
-            </p>
-            <div class="contact__channels">
-              <a href="mailto:contacto@zkstudios.com" class="contact-link" aria-label="Enviar email">
-                <span class="contact-link__icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
-                </span>
-                <span class="contact-link__label">Email</span>
-                <span class="contact-link__value">contacto@zkstudios.com</span>
-              </a>
+        <div class="contact__single">
+          <p class="contact__text">
+            ¿Tenes un proyecto en mente? Contáctame y hagámoslo realidad
+          </p>
+          <div class="contact__channels">
 
-              <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Ver Behance">
-                <span class="contact-link__icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988H0V5.021h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zM3 11h3.584c2.508 0 2.906-3-.312-3H3v3zm3.391 3H3v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
-                </span>
-                <span class="contact-link__label">Behance</span>
-                <span class="contact-link__value">behance.net/zkstudios</span>
-              </a>
+            <a href="https://wa.link/ggh8cn" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Enviar WhatsApp">              
+              <span class="contact-link__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>              </span>
+              <span class="contact-link__label">WhatsApp</span>
+              <span class="contact-link__value">+5492964533279</span>
+            </a>
 
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Ver Instagram">
-                <span class="contact-link__icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                </span>
-                <span class="contact-link__label">Instagram</span>
-                <span class="contact-link__value">@zkstudios</span>
-              </a>
+            <a href="https://www.instagram.com/zkstudios.rg" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Ver Instagram">
+              <span class="contact-link__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </span>
+              <span class="contact-link__label">Instagram</span>
+              <span class="contact-link__value">@zkstudios.rg</span>
+            </a>
 
-              <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Enviar WhatsApp">
-                <span class="contact-link__icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
-                </span>
-                <span class="contact-link__label">WhatsApp</span>
-                <span class="contact-link__value">Enviar mensaje</span>
-              </a>
-            </div>
-          </div>
-          <div class="contact__form-wrapper">
-            <form class="contact-form" id="contactForm" novalidate>
-              <div class="contact-form__group">
-                <label for="name" class="contact-form__label">Nombre</label>
-                <input type="text" id="name" name="name" class="contact-form__input" placeholder="Tu nombre" required autocomplete="name">
-              </div>
-              <div class="contact-form__group">
-                <label for="email" class="contact-form__label">Email</label>
-                <input type="email" id="email" name="email" class="contact-form__input" placeholder="tu@email.com" required autocomplete="email">
-              </div>
-              <div class="contact-form__group">
-                <label for="message" class="contact-form__label">Mensaje</label>
-                <textarea id="message" name="message" class="contact-form__input contact-form__textarea" placeholder="Contame sobre tu proyecto..." rows="4" required></textarea>
-              </div>
-              <button type="submit" class="btn btn--primary btn--full">
-                Enviar Mensaje
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-              </button>
-            </form>
+            <a href="mailto:ezequielg04@icloud.com" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Enviar email">
+              <span class="contact-link__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
+              </span>
+              <span class="contact-link__label">Email</span>
+              <span class="contact-link__value">ezequielg04@icloud.com</span>
+            </a>
+
           </div>
         </div>
       </div>
@@ -469,7 +442,7 @@
     </div>
     <div class="footer__content container">
       <p class="footer__copy">&copy; 2026 ZK Studios. Todos los derechos reservados.</p>
-      <p class="footer__credit">Diseñado con pasión por <strong>ZK Studios</strong></p>
+      <p class="footer__credit">Diseñado por <strong>Bukle | Agencia de Soluciones Inteligentes</strong></p>
     </div>
   </footer>
 

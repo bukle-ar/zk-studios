@@ -27,7 +27,7 @@ const Modal = (() => {
         {
           name: 'Logo ZK Studios',
           description: 'Identidad principal del estudio',
-          image: '' // ruta: assets/portfolio/logo-zk.png
+          image: 'assets/img/LOGO PNG ZKSTUDIOS.png' // ruta: assets/portfolio/logo-zk.png
         },
         {
           name: 'Logo Proyecto 2',

@@ -17,6 +17,13 @@
   letter-spacing: var(--ls-wide);
 }
 
+.section__icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
 .section__title {
   font-family: var(--ff-display);
   font-size: var(--fs-section);

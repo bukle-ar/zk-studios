@@ -95,6 +95,16 @@
   color: var(--clr-primary);
 }
 
+.nav__logo-img {
+  height: 40px;
+  width: auto;
+  transition: opacity var(--duration-fast);
+}
+
+.nav__logo:hover .nav__logo-img {
+  opacity: 0.8;
+}
+
 .nav__menu {
   display: flex;
   align-items: center;
@@ -179,7 +189,7 @@
   display: flex;
   gap: var(--space-xl);
   white-space: nowrap;
-  animation: marqueeScroll 20s linear infinite;
+  animation: marqueeScroll 50s linear infinite;
   width: max-content;
 }
 

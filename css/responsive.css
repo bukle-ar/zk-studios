@@ -17,10 +17,6 @@
     justify-content: center;
   }
 
-  .hero__visual {
-    order: -1;
-  }
-
   .hero__image-wrapper {
     width: 240px;
     height: 240px;
@@ -35,7 +31,7 @@
     gap: var(--space-md);
   }
 
-  .contact__grid {
+  .contact__channels {
     grid-template-columns: 1fr;
   }
 }
@@ -128,13 +124,13 @@
   }
 
   /* Portfolio categories */
-  .portfolio__categories {
-    grid-template-columns: 1fr;
+  .portfolio__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* Contact */
-  .contact__form-wrapper {
-    padding: var(--space-lg);
+  .contact__channels {
+    grid-template-columns: 1fr;
   }
 
   /* Footer */
