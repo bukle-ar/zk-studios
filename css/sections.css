@@ -4,7 +4,7 @@
 
 /* --- Hero --- */
 .hero {
-  padding-block: var(--space-2xl) var(--space-2xl);
+  padding-block: var(--space-2x1) var(--space-2x1);
   position: relative;
   overflow: hidden;
   min-height: 80vh;
@@ -147,7 +147,7 @@
 
 .hero__bottom {
   position: absolute;
-  bottom: var(--space-xl);
+  bottom: var(--space-md);
   left: var(--container-padding);
   right: var(--container-padding);
   z-index: 2;

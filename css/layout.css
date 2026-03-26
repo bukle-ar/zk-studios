@@ -197,6 +197,11 @@
   animation-direction: reverse;
 }
 
+.marquee--footer .marquee__track {
+  animation: marqueeScroll 50s linear infinite;
+  min-width: 200vw;
+}
+
 .marquee__item {
   font-family: var(--ff-display);
   font-size: var(--fs-lg);
